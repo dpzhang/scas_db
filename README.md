@@ -13,25 +13,32 @@ Due to confidentiality, code would not be published or released from this
 repository, and this manual is written soly for __Compass Lexecon__ staff who 
 will be using the scraper.
 
-## To install required software and packages
+## Preparation 
 
-### Step 1: Cygwin:
+### Step 1: Install Cygwin
 * Download __Cygwin__ from [here](https://cygwin.com/install.html) by Left-clicking __setup-x86\_64.exe__ (I would recommend to save this installation 
 file on the Desktop in case some other packages or softwares are needed in the future).
 
 * Install __Cygwin__ by:
     + Keep clicking __Next__ button until __Select Packages__.
-    + Click on the dropdown list of ''View'', and then select ''Full''.
-    + In ''Search'', type in <code>Python3</code> and wait for the list 
-to ue.
-    + Four packages are needed and they are listed below. Click ''Skip'' 
-undew'' column, and select the newest version to install.
+    + Click on the dropdown list of __View__, and then select __Full__ option.
+    + In __Search__, type in <code>Python3</code> and wait for the list 
+to update.
+    + Four packages are needed and they are listed below. Click __Skip__ under 
+__New__ column, and select the newest version to install.
         - <code>python3-devel: Py3K language interpreter</code> 
         - <code>python3-ipython: Interactive Python interpreter</code>
-        - <code><python3-pip: Python package installation tool/code>
+        - <code>python3-pip: Python package installation tool</code>
         - <code>python3-zmq: Python 0MQ bindings</code>
+    + Keep clicking __Next__ to finish installation.
 
 
 ### Step 2: Install Packages
+* Open __Cygwin__, and type in following command.
+```bash
+pip3 install selenium openpyxl
+```
+__Notice:__ You only need to install required packages once in a machine.
 
-### Step 3: Use scraper
+## How to use scraper:
+
