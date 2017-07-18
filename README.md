@@ -1,5 +1,6 @@
 # SCAS Database Scraper Mannual
 Author: Dongping 'Gabriel' Zhang
+
 Email: dpzhang@uchicago.edu
 
 ## About this repository:
