@@ -16,16 +16,16 @@ will be using the scraper.
 ## Preparation 
 
 ### Step 1: Install Cygwin
-* Download __Cygwin__ from [here](https://cygwin.com/install.html) by Left-clicking __setup-x86\_64.exe__ (I would recommend to save this installation 
-file on the Desktop in case some other packages or softwares are needed in the future).
+* Download __Cygwin__ from [here](https://cygwin.com/install.html) by left-clicking __setup-x86\_64.exe__ once get to the page.
+__Suggestion:__ I would recommend users to save this installation file on the Desktop in case some other packages or softwares are needed in the future.
 
-* Install __Cygwin__ by:
+* Procedures to install __Cygwin__:
     + Keep clicking __Next__ button until __Select Packages__.
     + Click on the dropdown list of __View__, and then select __Full__ option.
     + In __Search__, type in <code>Python3</code> and wait for the list 
 to update.
-    + Four packages are needed and they are listed below. Click __Skip__ under 
-__New__ column, and select the newest version to install.
+    + Four packages are needed and they are listed below. For each of those packages, click on __Skip__ under 
+the __New__ column, and select the newest version to install.
         - <code>python3-devel: Py3K language interpreter</code> 
         - <code>python3-ipython: Interactive Python interpreter</code>
         - <code>python3-pip: Python package installation tool</code>
@@ -34,7 +34,7 @@ __New__ column, and select the newest version to install.
 
 
 ### Step 2: Install Packages
-* Open __Cygwin__, and type in following command.
+* Open __Cygwin__, and type in the following command.
 ```bash
 pip3 install selenium openpyxl
 ```
