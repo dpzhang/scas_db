@@ -19,6 +19,7 @@ will be using the scraper.
     * Download __Cygwin__ from [here](https://cygwin.com/install.html) by 
 Left-clicking *setup-x86_64.exe* (I would recommend to save this installation 
 file on the Desktop in case some other packages or softwares are needed in the future).
+
     * Install __Cygwin__ by:
         + Keep clicking __Next__ button until __Select Packages__.
         + Click on the dropdown list of ``View'', and then select ``Full''.
