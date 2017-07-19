@@ -4,17 +4,17 @@ __Author__: Gabriel Zhang
 __Email__: gzhang@compasslexecon.com
 
 __Ext.__: 20639
-## About this repository:
+## I. About this repository:
 This repository contains the user manual of SCAS Database scraper written by 
 [Gabriel Zhang](https://github.com/dpzhang) for __Compass Lexecon__. 
 The scrapper is completely written in Python 3.6. 
 
-## Disclaimer
+## II. Disclaimer
 Due to confidentiality, code would not be published or released from this 
 repository, and this manual is written soley for __Compass Lexecon__ staff who 
 will be using the scraper.
 
-## Preparation 
+## III. Preparation 
 
 ### Step 1: Install Cygwin
 * Download __Cygwin__ from [here](https://cygwin.com/install.html) by left-clicking __setup-x86\_64.exe__ once get to the page.
@@ -42,20 +42,21 @@ pip3 install selenium openpyxl
 __Notice:__ You only need to install required packages once in a machine.
 
 
-### Step 3: Download Chrome and Chrome Driver
-* Download Chrome [here](https://www.google.com/chrome/browser/).
+### Step 3: Download Chrome Browser and Chrome Driver
+* Download Chrome browser [here](https://www.google.com/chrome/browser/)
 * Download Chrome driver [here](https://sites.google.com/a/chromium.org/chromedriver/downloads)
     + Click on __Latest Release: ChromeDriver X.XX__
     + Download __chromedriver\_win32.zip__
     + Unzip the file to get __chromedriver.exe__
-    + Drag and drop __chromedriver.exe__ to <code>C:\Windows\System32</code> directory,
+    + Drag and drop __chromedriver.exe__ to <code>C:\Windows\System32</code> directory
 
 __Notice:__ You only need to install required packages once in a machine.
 
-## How to use scraper:
+## IV. SCAS DB Scraper
 __Notice__: in this manual, I assume the scraper file locates in <code>C:\Workdata</code>
 
-* Get to the directory that contains scraper by following bash command
+* Get to the directory that contains scraper by the following bash command
+    + You can copy and paste this command to __Cygwin__ bash prompt
 ```bash
 cd C:\Workdata\
 ```
@@ -67,10 +68,15 @@ and 07/19/2017, use following command.
 python3 crawler.py '01/01/2016' '07/19/2017'
 ```
 
-* When scrapping, a Chrome browser would be oprned and the __Cygwin__ instance 
-will also inform you of the scrapping progress. You can minimize the Chrome 
-browser (it might pop up again, which is normal) or __Cygwin__ instance, but 
-just dont close neither of the windows.
+* When scrapping, a Chrome browser would be opened and the __Cygwin__ instance 
+will also inform you of the scrapping progress. Chrome browser would 
+automatically maximize its window size by the program. If you do not want the 
+browser to occupy your entire screen, you can minimize it to 
+the task bar by clicking __``-''__ button on the top right cornor like most of 
+windows programs. Typically every 40 mins, the current Chrome browser would 
+quit and a new browser would be initiated. This is normal and is caused by 
+website auto-logout.
+
 
 * After scrapping, go to <code>C:\Workdata</code>, you will see a new directory 
 called <code>case_profiles</code>. Double-click to enter the directory, and you 
