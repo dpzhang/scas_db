@@ -66,3 +66,12 @@ and 07/19/2017, use following command.
 python3 crawler.py '01/01/2016' '07/19/2017'
 ```
 
+* When scrapping, a Chrome browser would be oprned and the __Cygwin__ instance 
+will also inform you of the scrapping progress. You can minimize the Chrome 
+browser (it might pop up again, which is normal) or __Cygwin__ instance, but 
+just dont close neither of the windows.
+
+* After scrapping, go to <code>C:\Workdata</code>, you will see a new directory 
+called <code>case_profiles</code>. Double-click to enter the directory, and you 
+will likely to see sub-directories in format of __MMDDYYYY-MMDDYYYY__ (For example, 
+01012016-07192017), and all scraped case profiles are stored in there.
