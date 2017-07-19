@@ -1,23 +1,23 @@
-# SCAS Database Scraper Mannual
+# SCAS Database Scraper User Mannual
 __Author__: Gabriel Zhang
 
 __Email__: gzhang@compasslexecon.com
 
 __Ext.__: 20639
 ## I. About this repository:
-This repository contains the user manual of SCAS Database scraper written by 
+This repository contains the user manual of SCAS Database Scraper written by 
 [Gabriel Zhang](https://github.com/dpzhang) for __Compass Lexecon__. 
-The scrapper is completely written in Python 3.6. 
+The scraper is completely written in Python 3.6. 
 
 ## II. Disclaimer
 Due to confidentiality, code would not be published or released from this 
-repository, and this manual is written soley for __Compass Lexecon__ staff who 
+repository, and this manual is written soley for __Compass Lexecon__ staffs who 
 will be using the scraper.
 
 ## III. Preparation 
 
 ### Step 1: Install Cygwin
-* Download __Cygwin__ from [here](https://cygwin.com/install.html) by left-clicking __setup-x86\_64.exe__ once get to the page.
+* Download __Cygwin__ from [here](https://cygwin.com/install.html) by left-clicking __setup-x86\_64.exe__ after getting to the page.
     + __Suggestion:__ I would recommend users to save this installation file on the Desktop in case some other packages or softwares are needed in the future.
 
 * Procedures to install __Cygwin__:
@@ -25,8 +25,7 @@ will be using the scraper.
     + Click on the dropdown list of __View__, and then select __Full__ option.
     + In __Search__, type in <code>Python3</code> and wait for the list 
 to update.
-    + After list got updated, four packages listed below would be needed to install. For each of those packages, click on __Skip__ under 
-the __New__ column, and select the newest version to install.
+    + After list got updated, four packages listed below would be needed to install. For each of those packages, click on __Skip__ under column __New__, and then select the newest version to install.
         - <code>python3-devel: Py3K language interpreter</code> 
         - <code>python3-ipython: Interactive Python interpreter</code>
         - <code>python3-pip: Python package installation tool</code>
@@ -53,7 +52,7 @@ __Notice:__ You only need to install required packages once in a machine.
 __Notice:__ You only need to install required packages once in a machine.
 
 ## IV. SCAS DB Scraper
-__Notice__: in this manual, I assume the scraper file locates in <code>C:\Workdata</code>
+### __NOTICE__: in this manual, I assume the scraper file locates in <code>C:\Workdata</code>
 
 * Get to the directory that contains scraper by the following bash command
     + You can copy and paste this command to __Cygwin__ bash prompt
@@ -61,24 +60,26 @@ __Notice__: in this manual, I assume the scraper file locates in <code>C:\Workda
 cd C:\Workdata\
 ```
 
-* Determine __Start Filing Date__ and __End Filing Date__. 
+* Determine __Start Filing Date__ and __End Filing Date__, and enter bash command 
+below to run scraper. 
     + For example, if you want to scrap all case profiles between 01/01/2016 
-and 07/19/2017, use following command.
+and 07/19/2017, use the following command.
 ```bash
 python3 crawler.py '01/01/2016' '07/19/2017'
 ```
 
 * When scrapping, a Chrome browser would be opened and the __Cygwin__ instance 
 will also inform you of the scrapping progress. Chrome browser would 
-automatically maximize its window size by the program. If you do not want the 
-browser to occupy your entire screen, you can minimize it to 
+automatically maximize its window size by the scraper program. If you do not 
+want the browser to occupy your entire screen, you can minimize it to 
 the task bar by clicking __``-''__ button on the top right cornor like most of 
 windows programs. Typically every 40 mins, the current Chrome browser would 
-quit and a new browser would be initiated. This is normal and is caused by 
+exit and a new browser would be initiated. This is normal and is caused by 
 website auto-logout.
 
 
 * After scrapping, go to <code>C:\Workdata</code>, you will see a new directory 
-called <code>case_profiles</code>. Double-click to enter the directory, and you 
-will likely to see sub-directories in format of __MMDDYYYY-MMDDYYYY__ (For example, 
-01012016-07192017), and all scraped case profiles are stored in there.
+called <code>case\_profiles</code>. Double-click to enter the directory, and you 
+will see sub-directories in format of __MMDDYYYY-MMDDYYYY__ (For example, 
+01012016-07192017), and all scraped case profiles are stored in individual
+ Excel format.
