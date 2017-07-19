@@ -3,6 +3,7 @@ __Author__: Gabriel Zhang
 
 __Email__: gzhang@compasslexecon.com
 
+__Ext.__: 20639
 ## About this repository:
 This repository contains the user manual of SCAS Database scraper written by 
 [Gabriel Zhang](https://github.com/dpzhang) for __Compass Lexecon__. 
