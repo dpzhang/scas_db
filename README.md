@@ -34,7 +34,7 @@ the __New__ column, and select the newest version to install.
 
 
 ### Step 2: Install Required Packages
-* Open __Cygwin__, and type in the following command.
+* After downloading Cygwin, open __Cygwin__, and type in the following command.
 ```bash
 pip3 install selenium openpyxl
 ```
@@ -48,6 +48,21 @@ __Notice:__ You only need to install required packages once in a machine.
     + Download __chromedriver\_win32.zip__
     + Unzip the file to get __chromedriver.exe__
     + Drag and drop __chromedriver.exe__ to <code>C:\Windows\System32</code> directory,
+
 __Notice:__ You only need to install required packages once in a machine.
 
 ## How to use scraper:
+__Notice__: in this manual, I assume the scraper file locates in <code>C:\Workdata</code>
+
+* Get to the directory that contains scraper by following bash command
+```bash
+cd C:\Workdata\
+```
+
+* Determine __Start Filing Date__ and __End Filing Date__. 
+    + For example, if you want to scrap all case profiles between 01/01/2016 
+and 07/19/2017, use following command.
+```bash
+python3 crawler.py '01/01/2016' '07/19/2017'
+```
+
