@@ -1,7 +1,7 @@
 # SCAS Database Scraper Mannual
-Author: Dongping 'Gabriel' Zhang
+__Author__: Gabriel Zhang
 
-Email: gzhang@compasslexecon.com
+__Email__: gzhang@compasslexecon.com
 
 ## About this repository:
 This repository contains the user manual of SCAS Database scraper written by 
