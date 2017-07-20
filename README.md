@@ -34,7 +34,7 @@ to update.
 
 
 ### Step 2: Install Required Packages
-* After downloading Cygwin, open __Cygwin__, and type in the following command.
+* After downloading __Cygwin__, open __Cygwin__, and type in the following command.
 ```bash
 pip3 install selenium openpyxl
 ```
