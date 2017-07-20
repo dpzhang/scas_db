@@ -35,9 +35,9 @@ to update.
 
 ### Step 2: Install Required Packages
 * After downloading __Cygwin__, open __Cygwin__, and type in the following command.
-```bash
-pip3 install selenium openpyxl
-```
+    ```bash
+    pip3 install selenium openpyxl
+    ```
 __Notice:__ You only need to install required packages once in a machine.
 
 
@@ -54,19 +54,19 @@ __Notice:__ You only need to install required packages once in a machine.
 ## IV. SCAS DB Scraper
 ### __NOTICE__: in this manual, I assume the scraper file locates in <code>C:\Workdata</code>
 
-* Get to the directory that contains scraper by the following bash command
+* Get to the directory that contains scraper by the following bash command.
     + You can copy and paste this command to __Cygwin__ bash prompt
-```bash
-cd C:\Workdata\
-```
+        ```bash
+        cd C:\Workdata\
+        ```
 
 * Determine __Start Filing Date__ and __End Filing Date__, and enter bash command 
 below to run scraper. 
     + For example, if you want to scrap all case profiles between 01/01/2016 
 and 07/19/2017, use the following command.
-```bash
-python3 crawler.py '01/01/2016' '07/19/2017'
-```
+        ```bash
+        python3 crawler.py '01/01/2016' '07/19/2017'
+        ```
 
 * When scrapping, a Chrome browser would be opened and the __Cygwin__ instance 
 will also inform you of the scrapping progress. Chrome browser would 
