@@ -4,6 +4,7 @@ __Author__: Gabriel Zhang
 __Email__: gzhang@compasslexecon.com
 
 __Ext.__: 20639
+
 ## I. About this repository:
 This repository contains the user manual of SCAS Database Scraper written by 
 [Gabriel Zhang](https://github.com/dpzhang) for __Compass Lexecon__. 
@@ -25,7 +26,7 @@ will be using the scraper.
     + Click on the dropdown list of __View__, and then select __Full__ option.
     + In __Search__, type in <code>Python3</code> and wait for the list 
 to update.
-    + After list got updated, four packages listed below would be needed to install. For each of those packages, click on __Skip__ under column __New__, and then select the newest version to install.
+    + After the list got updated, four packages listed below would be needed to install. For each of those packages, click on __Skip__ under column __New__, and then select the newest version to install.
         - <code>python3-devel: Py3K language interpreter</code> 
         - <code>python3-ipython: Interactive Python interpreter</code>
         - <code>python3-pip: Python package installation tool</code>
@@ -38,18 +39,18 @@ to update.
     ```bash
     pip3 install selenium openpyxl
     ```
-__Notice:__ You only need to install required packages once in a machine.
+__Notice:__ You only need to install required packages once in one machine.
 
 
 ### Step 3: Download Chrome Browser and Chrome Driver
-* Download Chrome browser [here](https://www.google.com/chrome/browser/)
-* Download Chrome driver [here](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+* Download Chrome browser [here](https://www.google.com/chrome/browser/).
+* Download Chrome driver [here](https://sites.google.com/a/chromium.org/chromedriver/downloads).
     + Click on __Latest Release: ChromeDriver X.XX__
     + Download __chromedriver\_win32.zip__
     + Unzip the file to get __chromedriver.exe__
     + Drag and drop __chromedriver.exe__ to <code>C:\Windows\System32</code> directory
 
-__Notice:__ You only need to install required packages once in a machine.
+__Notice:__ You only need to do it once in one machine.
 
 ## IV. SCAS DB Scraper
 ### __NOTICE__: in this manual, I assume the scraper file locates in <code>C:\Workdata</code>
@@ -76,6 +77,13 @@ the task bar by clicking __``-''__ button on the top right cornor like most of
 windows programs. Typically every 40 mins, the current Chrome browser would 
 exit and a new browser would be initiated. This is normal and is caused by 
 website auto-logout.
+
+
+* __Notice: current official Chrome for Windows is in patch 59 which does not support 
+headless mode (while MAC and Linux both does). Because PhantomJS is not as stable and reliable as 
+Chrome, so for now I decide to stick to Chromedriver. 
+When Google releases their patch 60 for Chrome, I will update the code accordingly.__
+    + Reference [here](https://developers.google.com/web/updates/2017/04/headless-chrome)
 
 
 * After scrapping, go to <code>C:\Workdata</code>, you will see a new directory 
