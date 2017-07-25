@@ -85,6 +85,7 @@ the task bar like most of windows programs. The current Chrome browser would
 likely to exit frequently and new browser windows would be initiated. This is 
 normal and is caused by website auto-logout.~~ ___Update: Google Chrome Patch 60 
 has been released on July 25th! Now the scraper is able to go headless___.
+    + Reference [here](https://chromereleases.googleblog.com/)
 
 * __Notice: current official Chrome for Windows is in patch 59 which does not support 
 headless mode (while MAC and Linux both does now). PhantomJS could be a solution but 
