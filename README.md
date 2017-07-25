@@ -62,7 +62,7 @@ dependencies from the Python Package Index.
 
 
 ## IV. SCAS DB Scraper
-### __NOTICE__: in this manual, I assume the scraper file locates in <code>C:\Workdata\scas\_scraper.py</code>.
+### __NOTICE__: in this manual, I assume the scraper file locates in <code>C:\Workdata\scas\_scraper.py</code>
 
 
 * Determine __Start Filing Date__ and __End Filing Date__, and enter command 
@@ -74,8 +74,8 @@ and 07/19/2017, use the following command.
         ```
     + ___Friendly Reminder___: although the scraper is capable of scrapping data 
 of any time interval from 1 day to 10 years or more, it is recommended to scrap 
-case profiles within shorter interval for faster job processing speed, and My 
-recommendation would be 1 year. 
+case profiles within shorter time interval for faster job processing speed, and 
+my recommendation would be 1 year. 
 
 * When scrapping, a Chrome browser would be opened and the Windows Command Prompt 
 instance will also inform you of the scrapping progress. Chrome browser would 
