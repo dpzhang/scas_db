@@ -10,28 +10,30 @@ This repository contains the user manual of SCAS Database Scraper written by
 [Gabriel Zhang](https://github.com/dpzhang) for __Compass Lexecon__. 
 The scraper is completely written in Python 3.6. 
 
+
 ## II. Disclaimer
 Due to confidentiality, code would not be published or released from this 
 repository, and this manual is written soley for __Compass Lexecon__ staffs who 
 will be using the scraper.
 
-## III. Preparation 
 
+## III. Preparation 
 
 ### Step 1: Install Python for Windows
 * Download __Python 3.x.x for Windows__ installation file from [here](https://www.python.org/downloads/]), 
-the name of the installation file downloaded to your machine will typically look 
+the name of the installation file downloaded to your machine would typically look 
 something like __python-3.x.x.exe__.
     + On July 25th, 2017, the newest version of __Python for Windows__ is version 3.6.2
 
 * Double click the installation file to install Python
-    + Check the box __``Add Python 3.6 to PATH''__.
-    + Left-click __``Install now''__, and the program location will be something like <code>C:\Users\gzhang\AppData\Local\Programs\Python\Python36-32</code> in my machine.
+    + Check the box __''Add Python 3.6 to PATH''__.
+    + Left-click __''Install now''__, and Python would be installed in designated location, such as <code>C:\Users\gzhang\AppData\Local\Programs\Python\Python36-32</code> in my machine.
 
 
 ### Step 2: Install Required Packages
 * After downloading Python3, open a Windows Command Prompt. Copy and paste the 
-command below and press enter. Windows will update built-in package.
+command below and press enter. Windows will update all built-in package.
+    + Reference [here](https://packaging.python.org/tutorials/installing-packages/)
     ```bash
     python -m pip install -U pip setuptools
     ```
@@ -39,7 +41,7 @@ command below and press enter. Windows will update built-in package.
 * To install required pacakge, enter the following command to Windows Command 
 Prompt. This command will install the latest version of a module and its 
 dependencies from the Python Package Index.
-    + ___Friendly reminder___: You only need to do this once in a machine.
+    + Reference [here](https://docs.python.org/3/installing/index.html)
     ```bash
     python -m pip install selenium openpyxl
     ```
@@ -55,7 +57,9 @@ dependencies from the Python Package Index.
         ```bash
         C:\Users\gzhang\AppData\Local\Programs\Python\Python36-32\Scripts
         ```
+        - Reference [here](https://github.com/SeleniumHQ/selenium-google-code-issue-archive/issues/2034)
         - ___Friendly reminder___: You only need to do this once in a machine.
+
 
 ## IV. SCAS DB Scraper
 ### __NOTICE__: in this manual, I assume the scraper file locates in <code>C:\Workdata</code> called <code>scas\_scraper.py</code>
@@ -66,7 +70,7 @@ below to Windows Command Prompt to run the scraper.
     + For example, if you want to scrap all case profiles between 01/01/2016 
 and 07/19/2017, use the following command.
         ```bash
-        python scas_scraper.py 01/01/2016 07/19/2017
+        python C:\Workdata\scas_scraper.py 01/01/2016 07/19/2017
         ```
 
 * When scrapping, a Chrome browser would be opened and the Windows Command Prompt 
