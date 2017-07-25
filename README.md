@@ -1,4 +1,5 @@
-# SCAS Database Scraper \\User Mannual
+# SCAS Database Scraper 
+# User Mannual
 __Author__: Gabriel Zhang
 
 __Email__: gzhang@compasslexecon.com
