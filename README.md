@@ -62,7 +62,7 @@ dependencies from the Python Package Index.
 
 
 ## IV. SCAS DB Scraper
-### __NOTICE__: in this manual, I assume the scraper file locates in <code>C:\Workdata</code> called <code>scas\_scraper.py</code>
+### __NOTICE__: in this manual, I assume the scraper file locates in <code>C:\Workdata\scas\_scraper.py</code>.
 
 
 * Determine __Start Filing Date__ and __End Filing Date__, and enter command 
