@@ -21,7 +21,7 @@ will be using the scraper.
 
 ### Step 1: Install Python for Windows
 * Download __Python 3.x.x for Windows__ installation file from [here](https://www.python.org/downloads/]), 
-the name of the installation file downloaded to your machine would typically look 
+the name of the installation file downloaded to user's machine would typically look 
 something like __python-3.x.x.exe__.
     + On July 25th, 2017, the newest version of __Python for Windows__ is version 3.6.2
 
@@ -52,7 +52,7 @@ dependencies from the Python Package Index.
     + Click on __Latest Release: ChromeDriver X.XX__
     + Download __chromedriver\_win32.zip__
     + Unzip the file to get __chromedriver.exe__
-    + Drag and drop __chromedriver.exe__ to your Python3 home directory's subdirectory called Scripts.
+    + Drag and drop __chromedriver.exe__ to user's Python3 home directory's subdirectory called Scripts.
         - For example, mine would be:
         ```bash
         C:\Users\gzhang\AppData\Local\Programs\Python\Python36-32\Scripts
@@ -67,7 +67,7 @@ dependencies from the Python Package Index.
 
 * Determine __Start Filing Date__ and __End Filing Date__, and enter command 
 below to Windows Command Prompt to run the scraper. 
-    + For example, if you want to scrap all case profiles between 01/01/2016 
+    + For example, if a user want to scrap all case profiles between 01/01/2016 
 and 07/19/2017, use the following command.
         ```bash
         python C:\Workdata\scas_scraper.py 01/01/2016 07/19/2017
@@ -77,26 +77,21 @@ of any time interval from 1 day to 10 years or more, it is recommended to scrap
 case profiles within shorter time interval for faster job processing speed, and 
 my recommendation would be 1 year. 
 
-* ~~When scrapping, a Chrome browser would be opened and the Windows Command Prompt 
-instance will also inform you of the scrapping progress. Chrome browser would 
-automatically maximize its window size by the program. So, if you do not 
-want the browser to occupy your entire screen, you can minimize it to 
-the task bar like most of windows programs. The current Chrome browser would 
-likely to exit frequently and new browser windows would be initiated. This is 
-normal and is caused by website auto-logout.~~ ___Update: Google Chrome Patch 60 
-has been released on July 25th! Now the scraper is able to go headless___.
-    + Reference [here](https://chromereleases.googleblog.com/)
+* When scrapping, the Windows Command Prompt instance will inform user of the 
+scrapping progress.  
 
-* __Notice: current official Chrome for Windows is in patch 59 which does not support 
+* ~~__Notice: current official Chrome for Windows is in patch 59 which does not support 
 headless mode (while MAC and Linux both does now). PhantomJS could be a solution but 
 it is not as stable and reliable as Chrome. Thus for now I decide to stick to Chromedriver. 
-When Google releases their patch 60 for Chrome, I will update the code accordingly.__
-    + Reference [here](https://developers.google.com/web/updates/2017/04/headless-chrome)
+When Google releases their patch 60 for Chrome, I will update the code accordingly.__~~
+    + ___Update: Google Chrome Patch 60 has been released on July 25th! Now the 
+scraper is able to go headless___.
+        - Reference [here](https://chromereleases.googleblog.com/)
 
 
 ## V. Check Scraped Files
 * After scrapping completed successfully, go to <code>C:\Workdata</code>, and 
-you will see a new directory called <code>case\_profiles</code>. Double-click 
-to enter the directory, and you will see sub-directories in format of 
-__MMDDYYYY-MMDDYYYY__ (For example, 01012016-07192017), and all scraped case 
-profiles are stored in individual Excel format.
+user would be able to see a new directory called <code>case\_profiles</code>. 
+Double-click to enter the directory, and user would see sub-directories in 
+format of __MMDDYYYY-MMDDYYYY__ (For example, 01012016-07192017), and all 
+scraped case profiles are stored in individual Excel format.
