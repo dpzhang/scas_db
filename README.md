@@ -17,30 +17,32 @@ will be using the scraper.
 
 ## III. Preparation 
 
-### Step 1: Install Cygwin
-* Download __Cygwin__ from [here](https://cygwin.com/install.html) by left-clicking __setup-x86\_64.exe__ after getting to the page.
-    + __Suggestion:__ I would recommend users to save this installation file on the Desktop in case some other packages or softwares are needed in the future.
 
-* Procedures to install __Cygwin__:
-    + Keep clicking on the __Next__ button until __Select Packages__.
-    + Click on the dropdown list of __View__, and then select __Full__ option.
-    + In __Search__, type in <code>Python3</code> and wait for the list 
-to update.
-    + After the list got updated, four packages listed below would be needed to install. For each of those packages, click on __Skip__ under column __New__, and then select the newest version to install.
-        - <code>python3-devel: Py3K language interpreter</code> 
-        - <code>python3-ipython: Interactive Python interpreter</code>
-        - <code>python3-pip: Python package installation tool</code>
-        - <code>python3-zmq: Python 0MQ bindings</code>
-    + Keep clicking __Next__ to finish installation.
+### Step 1: Install Python for Windows
+* Download __Python 3.x.x for Windows__ installation file from [here](https://www.python.org/downloads/]), 
+the name of the installation file downloaded to your machine will typically look 
+something like __python-3.x.x.exe__.
+    + On July 25th, 2017, the newest version of __Python for Windows__ is version 3.6.2
+
+* Double click the installation file to install Python
+    + Check the box __``Add Python 3.6 to PATH''__.
+    + Left-click __``Install now''__, and the program location will be something like <code>C:\Users\gzhang\AppData\Local\Programs\Python\Python36-32</code> in my machine.
 
 
 ### Step 2: Install Required Packages
-* After downloading __Cygwin__, open __Cygwin__, and type in the following command.
+* After downloading Python3, open a Windows Command Prompt. Copy and paste the 
+command below and press enter. Windows will update built-in package.
     ```bash
-    pip3 install selenium openpyxl
+    python -m pip install -U pip setuptools
     ```
-__Notice:__ You only need to install required packages once in one machine.
 
+* To install required pacakge, enter the following command to Windows Command 
+Prompt. This command will install the latest version of a module and its 
+dependencies from the Python Package Index.
+    + ___Friendly reminder___: You only need to do this once in a machine.
+    ```bash
+    python -m pip install selenium openpyxl
+    ```
 
 ### Step 3: Download Chrome Browser and Chrome Driver
 * Download Chrome browser [here](https://www.google.com/chrome/browser/).
@@ -48,46 +50,44 @@ __Notice:__ You only need to install required packages once in one machine.
     + Click on __Latest Release: ChromeDriver X.XX__
     + Download __chromedriver\_win32.zip__
     + Unzip the file to get __chromedriver.exe__
-    + Drag and drop __chromedriver.exe__ to <code>C:\Windows\System32</code> directory
-
-__Notice:__ You only need to do it once in one machine.
+    + Drag and drop __chromedriver.exe__ to your Python3 home directory's subdirectory called Scripts.
+        - For example, mine would be:
+        ```bash
+        C:\Users\gzhang\AppData\Local\Programs\Python\Python36-32\Scripts
+        ```
+        - ___Friendly reminder___: You only need to do this once in a machine.
 
 ## IV. SCAS DB Scraper
-### __NOTICE__: in this manual, I assume the scraper file locates in <code>C:\Workdata</code>
+### __NOTICE__: in this manual, I assume the scraper file locates in <code>C:\Workdata</code> called <code>scas\_scraper.py</code>
 
-* Get to the directory that contains scraper by the following bash command.
-    + You can copy and paste this command to __Cygwin__ bash prompt
-        ```bash
-        cd C:\Workdata\
-        ```
 
-* Determine __Start Filing Date__ and __End Filing Date__, and enter bash command 
-below to run scraper. 
+* Determine __Start Filing Date__ and __End Filing Date__, and enter command 
+below to Windows Command Prompt to run the scraper. 
     + For example, if you want to scrap all case profiles between 01/01/2016 
 and 07/19/2017, use the following command.
         ```bash
-        python3 crawler.py '01/01/2016' '07/19/2017'
+        python scas_scraper.py 01/01/2016 07/19/2017
         ```
 
-* When scrapping, a Chrome browser would be opened and the __Cygwin__ instance 
-will also inform you of the scrapping progress. Chrome browser would 
-automatically maximize its window size by the scraper program. If you do not 
+* When scrapping, a Chrome browser would be opened and the Windows Command Prompt 
+instance will also inform you of the scrapping progress. Chrome browser would 
+automatically maximize its window size by the program. So, if you do not 
 want the browser to occupy your entire screen, you can minimize it to 
-the task bar by clicking __``-''__ button on the top right cornor like most of 
-windows programs. Typically every 40 mins, the current Chrome browser would 
-exit and a new browser would be initiated. This is normal and is caused by 
-website auto-logout.
+the task bar like most of windows programs. The current Chrome browser would 
+likely to exit frequently and new browser windows would be initiated. This is 
+normal and is caused by website auto-logout.
 
 
 * __Notice: current official Chrome for Windows is in patch 59 which does not support 
-headless mode (while MAC and Linux both does). Because PhantomJS is not as stable and reliable as 
-Chrome, so for now I decide to stick to Chromedriver. 
+headless mode (while MAC and Linux both does now). PhantomJS could be a solution but 
+it is not as stable and reliable as Chrome. Thus for now I decide to stick to Chromedriver. 
 When Google releases their patch 60 for Chrome, I will update the code accordingly.__
     + Reference [here](https://developers.google.com/web/updates/2017/04/headless-chrome)
 
 
-* After scrapping, go to <code>C:\Workdata</code>, you will see a new directory 
-called <code>case\_profiles</code>. Double-click to enter the directory, and you 
-will see sub-directories in format of __MMDDYYYY-MMDDYYYY__ (For example, 
-01012016-07192017), and all scraped case profiles are stored in individual
- Excel format.
+## Check scraped files
+* After scrapping completed successfully, go to <code>C:\Workdata</code>, and 
+you will see a new directory called <code>case\_profiles</code>. Double-click 
+to enter the directory, and you will see sub-directories in format of 
+__MMDDYYYY-MMDDYYYY__ (For example, 01012016-07192017), and all scraped case 
+profiles are stored in individual Excel format.
