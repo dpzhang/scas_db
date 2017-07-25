@@ -77,14 +77,14 @@ of any time interval from 1 day to 10 years or more, it is recommended to scrap
 case profiles within shorter time interval for faster job processing speed, and 
 my recommendation would be 1 year. 
 
-* When scrapping, a Chrome browser would be opened and the Windows Command Prompt 
+* ~~When scrapping, a Chrome browser would be opened and the Windows Command Prompt 
 instance will also inform you of the scrapping progress. Chrome browser would 
 automatically maximize its window size by the program. So, if you do not 
 want the browser to occupy your entire screen, you can minimize it to 
 the task bar like most of windows programs. The current Chrome browser would 
 likely to exit frequently and new browser windows would be initiated. This is 
-normal and is caused by website auto-logout.
-
+normal and is caused by website auto-logout.~~ ___Update: Google Chrome Patch 60 
+has been released on July 25th! Now the scraper is able to go headless___.
 
 * __Notice: current official Chrome for Windows is in patch 59 which does not support 
 headless mode (while MAC and Linux both does now). PhantomJS could be a solution but 
