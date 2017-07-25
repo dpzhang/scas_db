@@ -93,7 +93,7 @@ When Google releases their patch 60 for Chrome, I will update the code according
     + Reference [here](https://developers.google.com/web/updates/2017/04/headless-chrome)
 
 
-## V. Check scraped files
+## V. Check Scraped Files
 * After scrapping completed successfully, go to <code>C:\Workdata</code>, and 
 you will see a new directory called <code>case\_profiles</code>. Double-click 
 to enter the directory, and you will see sub-directories in format of 
