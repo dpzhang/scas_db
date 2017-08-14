@@ -79,13 +79,7 @@ my recommendation would be 1 year.
 
 * When scrapping, the Windows Command Prompt instance will inform user of the 
 scrapping progress.  
-    + ~~__Notice: current official Chrome for Windows is in patch 59 which does not support 
-headless mode (while MAC and Linux both does now). PhantomJS could be a solution but 
-it is not as stable and reliable as Chrome. Thus for now I decide to stick to Chromedriver. 
-When Google releases their patch 60 for Chrome, I will update the code accordingly.__~~
-    + ___Update: Google Chrome Patch 60 has been released on July 25th! Now the 
-scraper is able to go headless___.
-        - Reference [here](https://chromereleases.googleblog.com/)
+    - Reference [here](https://chromereleases.googleblog.com/)
 
 
 ## V. Check Scraped Files
