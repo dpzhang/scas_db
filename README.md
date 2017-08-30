@@ -12,9 +12,9 @@ The scraper is completely written in Python 3.6.
 
 
 ## II. Disclaimer
-Due to confidentiality, code would not be published or released from this 
-repository, and this manual is written soley for __Compass Lexecon__ staffs who 
-will be using the scraper.
+Due to confidentiality, *code would not be published or released from this 
+repository*, and this manual is written soley for __Compass Lexecon__ staffs who 
+would be using this scraper to obtain Securities Class Action Settlements data by ISS Link.
 
 
 ## III. Preparation 
